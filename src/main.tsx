@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HelmetProvider } from "react-helmet-async";
+import { SettingsProvider } from "./contexts/SettingContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,7 +16,9 @@ const queryClient = new QueryClient();
 root.render(
   <QueryClientProvider client={queryClient}>
     <HelmetProvider>
-      <App />
+      <SettingsProvider>
+        <App />
+      </SettingsProvider>
     </HelmetProvider>
   </QueryClientProvider>
 );
