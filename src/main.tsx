@@ -5,6 +5,8 @@ import App from "./App";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HelmetProvider } from "react-helmet-async";
 import { SettingsProvider } from "./contexts/SettingContext";
+import { CollapseDrawerProvider } from "./utils/CollapseDrawerContext";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -17,7 +19,11 @@ root.render(
   <QueryClientProvider client={queryClient}>
     <HelmetProvider>
       <SettingsProvider>
-        <App />
+        <CollapseDrawerProvider>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </CollapseDrawerProvider>
       </SettingsProvider>
     </HelmetProvider>
   </QueryClientProvider>

@@ -1,10 +1,14 @@
 import React from "react";
 // import "./App.css";
+import MotionLazyContainer from './components/animate/MotionLazyContainer';
+import ThemeProvider from './theme/index';
 
 function App() {
 
   return (
-    <> this new item</>
+    <MotionLazyContainer>
+      <ThemeProvider></ThemeProvider>
+    </MotionLazyContainer>
   );
 }
 
