@@ -45,7 +45,7 @@ import ControlLabel from './ControlLabel';
 import LoadingButton from './LoadingButton';
 
 // ----------------------------------------------------------------------
-export default function ComponentsOverrides(theme: Theme): any {
+export default function ComponentsOverrides(theme: Theme) {
   return Object.assign(
     Fab(theme),
     Tabs(theme),
