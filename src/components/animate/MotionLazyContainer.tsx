@@ -1,5 +1,4 @@
-import React from "react";
-import {ReactNode} from "react";
+import React, {ReactNode} from "react";
 import {LazyMotion} from 'framer-motion';
 
 const loadFeatures = () => import('./features').then((res) => res.default);
@@ -9,7 +8,9 @@ type Props = {
 };
 
 export default function MotionLazyContainer({children}: Props) {
-  <LazyMotion strict features={loadFeatures}>
-    {children}
-  </LazyMotion>;
+  return (
+    <LazyMotion strict features={loadFeatures}>
+      {children}
+    </LazyMotion>
+  );
 }
