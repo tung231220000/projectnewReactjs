@@ -1,3 +1,4 @@
+import React from 'react';
 // @mui
 import { styled } from '@mui/material/styles';
 import { Box, Stack, AppBar, Toolbar } from '@mui/material';
@@ -5,9 +6,9 @@ import { Box, Stack, AppBar, Toolbar } from '@mui/material';
 import useOffSetTop from '../../../hooks/useOffSetTop';
 import useResponsive from '../../../hooks/useResponsive';
 // utils
-import cssStyles from '../../../utils/cssStyles';
+import cssStyles from "@/utils/cssStyles";
 // config
-import { HEADER, NAVBAR } from '../../../config';
+import {HEADER, NAVBAR} from "@/config";
 // components
 import Logo from '../../../components/Logo';
 import Iconify from '../../../components/Iconify';
@@ -18,6 +19,7 @@ import AccountPopover from './AccountPopover';
 import LanguagePopover from './LanguagePopover';
 import ContactsPopover from './ContactsPopover';
 import NotificationsPopover from './NotificationsPopover';
+
 
 // ----------------------------------------------------------------------
 

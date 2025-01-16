@@ -29,12 +29,12 @@ function App() {
                   <AdvantageProvider>
                     {/*<QaAProvider>*/}
                     {/*  <PriceProvider>*/}
-                        <ServicePackProvider>
-                          <BonusServiceProvider>
-                            <Router/>
-                          </BonusServiceProvider>
-                        </ServicePackProvider>
-                      {/*</PriceProvider>*/}
+                    <ServicePackProvider>
+                      <BonusServiceProvider>
+                        <Router/>
+                      </BonusServiceProvider>
+                    </ServicePackProvider>
+                    {/*</PriceProvider>*/}
                     {/*</QaAProvider>*/}
                   </AdvantageProvider>
                 </SolutionCategoryProvider>

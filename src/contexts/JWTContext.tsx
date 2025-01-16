@@ -11,8 +11,8 @@ import {setSession, isValidToken} from "@/utils/jwt";
 import {PATH_AUTH} from "@/routes/paths";
 import userModule from "@/apis/user";
 import {SignUpPayload, SignUpResponse,} from "@/@types/user";
-import {Simulate} from "react-dom/test-utils";
-import error = Simulate.error;
+// import {Simulate} from "react-dom/test-utils";
+// import error = Simulate.error;
 
 enum Types {
   Initial = 'INITIALIZE',

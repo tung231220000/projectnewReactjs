@@ -1,3 +1,4 @@
+import React from 'react';
 import { PATH_DASHBOARD } from '../../../routes/paths';
 import SvgIconStyle from '../../../components/SvgIconStyle';
 

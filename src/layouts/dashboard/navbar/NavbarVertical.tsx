@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 // @mui
 import { styled, useTheme } from '@mui/material/styles';
@@ -9,7 +9,7 @@ import useCollapseDrawer from '../../../hooks/useCollapseDrawer';
 // utils
 import cssStyles from '../../../utils/cssStyles';
 // config
-import { NAVBAR } from '../../../config';
+import { NAVBAR } from '@/config';
 // components
 import Logo from '../../../components/Logo';
 import Scrollbar from '../../../components/Scrollbar';

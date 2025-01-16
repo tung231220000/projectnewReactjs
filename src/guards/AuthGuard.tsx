@@ -3,7 +3,7 @@ import React, { ReactNode, useState } from 'react';
 
 import LoadingScreen from '../components/LoadingScreen';
 import useAuth from '../hooks/useAuth';
-import Login from "@/pages/auth/login";
+import Login from "@/pages/auth/Login";
 
 // ----------------------------------------------------------------------
 

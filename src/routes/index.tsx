@@ -1,12 +1,11 @@
 import React, { ElementType, Suspense, lazy } from 'react';
-import { Navigate, useLocation, useRoutes } from 'react-router-dom';
+import { Navigate, useLocation, useRoutes, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import useAuth from "@/hooks/useAuth";
 import LoadingScreen from "@/components/LoadingScreen";
 import GuestGuard from "@/guards/GuestGuard";
 import AuthGuard from "@/guards/AuthGuard";
 import DashboardLayout from "@/layouts/dashboard";
 import LogoOnlyLayout from "@/layouts/LogoOnlyLayout";
-
 
 
 // ----------------------------------------------------------------------
@@ -278,7 +277,7 @@ export default function Router() {
 }
 
 // AUTHENTICATION
-const Login = Loadable(lazy(() => import('../pages/auth/login')));
+const Login = Loadable(lazy(() => import('../pages/auth/Login')));
 const Register = Loadable(lazy(() => import('../pages/auth/Register')));
 
 // Dashboard

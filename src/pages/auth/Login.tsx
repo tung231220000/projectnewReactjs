@@ -26,7 +26,6 @@ const HeaderStyle = styled('header')(({ theme }) => ({
 
 export default function Login() {
   return (
-    
       <Page title="Login">
         <RootStyle>
           <HeaderStyle>

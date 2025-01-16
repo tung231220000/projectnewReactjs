@@ -1,11 +1,11 @@
 import { Avatar, Box, Divider, MenuItem, Stack, Typography } from '@mui/material';
 
 import { alpha } from '@mui/material/styles';
-import useAuth from 'src/hooks/useAuth';
 import { useState } from 'react';
 import React from 'react';
 import IconButtonAnimate from "@/components/animate/IconButtonAnimate";
 import MenuPopover from "@/components/MenuPopover";
+import useAuth from "@/hooks/useAuth";
 
 // ----------------------------------------------------------------------
 

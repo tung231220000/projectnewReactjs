@@ -16,11 +16,11 @@
     "moduleResolution": "Node",
     "noEmit": true,
     "resolveJsonModule": true,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
     "types": [
-      "vite"
+      "node"
     ],
     "baseUrl": ".",
     "paths": {
