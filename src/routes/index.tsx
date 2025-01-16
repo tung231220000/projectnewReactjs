@@ -1,5 +1,5 @@
-import React, { ElementType, Suspense, lazy } from 'react';
-import { Navigate, useLocation, useRoutes, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import React, {ElementType, Suspense, lazy} from 'react';
+import {Navigate, useLocation, useRoutes} from 'react-router-dom';
 import useAuth from "@/hooks/useAuth";
 import LoadingScreen from "@/components/LoadingScreen";
 import GuestGuard from "@/guards/GuestGuard";
@@ -10,21 +10,22 @@ import LogoOnlyLayout from "@/layouts/LogoOnlyLayout";
 
 // ----------------------------------------------------------------------
 
-const Loadable = (Component: ElementType) => (props: any) => {
+const Loadable = <P extends Record<string, unknown>>(Component: ElementType) => (props: P) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { pathname } = useLocation();
+  const {pathname} = useLocation();
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { isAuthenticated } = useAuth();
+  const {isAuthenticated} = useAuth();
 
   const isDashboard = pathname.includes('/dashboard') && isAuthenticated;
 
   return (
-    <Suspense fallback={<LoadingScreen isDashboard={isDashboard} />}>
+    <Suspense fallback={<LoadingScreen isDashboard={isDashboard}/>}>
       <Component {...props} />
     </Suspense>
   );
 };
+
 
 export default function Router() {
   return useRoutes([

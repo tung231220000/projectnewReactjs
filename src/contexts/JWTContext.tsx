@@ -70,7 +70,7 @@ type AuthProviderProps = {
   children: ReactNode;
 };
 
-function AuthProvider({children}: AuthProviderProps) {
+function AuthProvider({children, }: AuthProviderProps) {
   const [state, dispatch] = useReducer(JWTReducer, initialState);
   const navigate = useNavigate();
   const {enqueueSnackbar} = useSnackbar();

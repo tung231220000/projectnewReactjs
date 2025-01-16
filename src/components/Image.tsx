@@ -47,7 +47,7 @@ export default function Image({
         }}
       >
         <Box
-          component={LazyLoadImage}
+          component={LazyLoadImage as React.ElementType}
           wrapperClassName="wrapper"
           effect={disabledEffect ? undefined : effect}
           placeholderSrc="/assets/placeholder.svg"

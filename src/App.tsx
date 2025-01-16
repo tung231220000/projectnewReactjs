@@ -20,22 +20,17 @@ function App() {
       <ThemeProvider>
         <ThemeSettings>
           <NotistackProvider>
-            <ProgressBarStyle/>
-            <ScrollToTop/>
-
+            <ProgressBarStyle />
+            <ScrollToTop />
             <AuthProvider>
               <CategoryProvider>
                 <SolutionCategoryProvider>
                   <AdvantageProvider>
-                    {/*<QaAProvider>*/}
-                    {/*  <PriceProvider>*/}
                     <ServicePackProvider>
                       <BonusServiceProvider>
-                        <Router/>
+                        <Router />
                       </BonusServiceProvider>
                     </ServicePackProvider>
-                    {/*</PriceProvider>*/}
-                    {/*</QaAProvider>*/}
                   </AdvantageProvider>
                 </SolutionCategoryProvider>
               </CategoryProvider>
