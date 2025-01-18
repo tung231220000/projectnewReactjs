@@ -87,7 +87,7 @@ function AuthProvider({children, }: AuthProviderProps) {
       dispatch({
         type: Types.Login,
         payload: {
-          user: data.result.currentUser,
+          User: data.result.currentUser,
         },
       });
       enqueueSnackbar('Đăng nhập thành công!', {

@@ -1,9 +1,9 @@
 import React, {ElementType, Suspense, lazy} from 'react';
 import {Navigate, useLocation, useRoutes} from 'react-router-dom';
-import useAuth from "@/hooks/useAuth";
+// import useAuth from "@/hooks/useAuth";
 import LoadingScreen from "@/components/LoadingScreen";
-import GuestGuard from "@/guards/GuestGuard";
-import AuthGuard from "@/guards/AuthGuard";
+// import GuestGuard from "@/guards/GuestGuard";
+// import AuthGuard from "@/guards/AuthGuard";
 import DashboardLayout from "@/layouts/dashboard";
 import LogoOnlyLayout from "@/layouts/LogoOnlyLayout";
 
@@ -15,9 +15,10 @@ const Loadable = <P extends Record<string, unknown>>(Component: ElementType) => 
   const {pathname} = useLocation();
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const {isAuthenticated} = useAuth();
+  // const {isAuthenticated} = useAuth();
 
-  const isDashboard = pathname.includes('/dashboard') && isAuthenticated;
+  // const isDashboard = pathname.includes('/dashboard') && isAuthenticated;
+  const isDashboard = pathname.includes('/dashboard') ;
 
   return (
     <Suspense fallback={<LoadingScreen isDashboard={isDashboard}/>}>
@@ -39,17 +40,17 @@ export default function Router() {
         {
           path: 'login',
           element: (
-            <GuestGuard>
+            // <GuestGuard>
               <Login />
-            </GuestGuard>
+            // </GuestGuard>
           ),
         },
         {
           path: 'register',
           element: (
-            <GuestGuard>
+            // <GuestGuard>
               <Register />
-            </GuestGuard>
+            // </GuestGuard>
           ),
         },
         { path: 'login-unprotected', element: <Login /> },
@@ -64,9 +65,9 @@ export default function Router() {
     {
       path: '/dashboard',
       element: (
-        <AuthGuard>
+        // <AuthGuard>
           <DashboardLayout />
-        </AuthGuard>
+        // </AuthGuard>
       ),
       children: [
         { element: <Navigate to="/dashboard/one" replace />, index: true },

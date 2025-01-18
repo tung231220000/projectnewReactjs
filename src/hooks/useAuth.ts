@@ -1,14 +1,15 @@
-import { useContext } from 'react';
-import {AuthContext} from "@/contexts/JWTContext";
+// import { useContext } from 'react';
+// import {AuthContext} from "@/contexts/JWTContext";
 
 // ----------------------------------------------------------------------
 
 const useAuth = () => {
-  const context = useContext(AuthContext);
+  // const context = useContext(AuthContext);
+  //
+  // if (!context) throw new Error('Auth context must be use inside AuthProvider');
 
-  if (!context) throw new Error('Auth context must be use inside AuthProvider');
-
-  return context;
+  // return context;
+  return;
 };
 
 export default useAuth;

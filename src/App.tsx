@@ -22,19 +22,19 @@ function App() {
           <NotistackProvider>
             <ProgressBarStyle />
             <ScrollToTop />
-            <AuthProvider>
-              <CategoryProvider>
-                <SolutionCategoryProvider>
-                  <AdvantageProvider>
-                    <ServicePackProvider>
-                      <BonusServiceProvider>
+            {/*<AuthProvider>*/}
+              {/*<CategoryProvider>*/}
+              {/*  <SolutionCategoryProvider>*/}
+              {/*    <AdvantageProvider>*/}
+              {/*      <ServicePackProvider>*/}
+                      {/*<BonusServiceProvider>*/}
                         <Router />
-                      </BonusServiceProvider>
-                    </ServicePackProvider>
-                  </AdvantageProvider>
-                </SolutionCategoryProvider>
-              </CategoryProvider>
-            </AuthProvider>
+                      {/*</BonusServiceProvider>*/}
+              {/*      </ServicePackProvider>*/}
+              {/*    </AdvantageProvider>*/}
+              {/*  </SolutionCategoryProvider>*/}
+              {/*</CategoryProvider>*/}
+            {/*</AuthProvider>*/}
           </NotistackProvider>
         </ThemeSettings>
       </ThemeProvider>
